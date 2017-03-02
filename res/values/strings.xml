@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EmpireNew</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Empire Basic Test Version</string>
+    <string name="MainBarView">Default Main Bar View Status XML</string>
+    <string name="extension">esd</string>
+
+</resources>

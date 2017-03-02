@@ -1,0 +1,10 @@
+*.iml
+.idea/*
+.settings/*
+assets/*
+bin/*
+gen/*
+gradle/wrapper/*
+libs/*
+*.log
+project.properties
