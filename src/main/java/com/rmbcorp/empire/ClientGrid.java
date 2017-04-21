@@ -1,14 +1,11 @@
 package com.rmbcorp.empire;
 
+import com.rmbcorp.empire.API.*;
+import com.rmbcorp.empire.Objects.BasicGrid;
+import com.rmbcorp.empire.Objects.GameTile;
+import com.rmbcorp.empire.Objects.Terrain;
+
 import java.util.ArrayList;
-import com.Empire.EmpireNew.Objects.BasicGrid;
-import com.Empire.EmpireNew.Objects.GameTile;
-import com.Empire.EmpireNew.API.Grid;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.Objects.Terrain;
-import com.Empire.EmpireNew.API.Tile;
-import com.Empire.EmpireNew.API.Unit;
 
 /**
  * Spinoff of ViewController that searches the backend for tile and unit data.  Importantly, the 

@@ -1,7 +1,7 @@
 package com.rmbcorp.empire.Objects;
 
-import com.Empire.EmpireNew.API.ID;
-import com.Empire.EmpireNew.API.TileID;
+import com.rmbcorp.empire.API.ID;
+import com.rmbcorp.empire.API.TileID;
 
 public class GameTileID implements TileID {
 

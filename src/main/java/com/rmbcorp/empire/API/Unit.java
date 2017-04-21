@@ -1,6 +1,6 @@
 package com.rmbcorp.empire.API;
 
-import com.Empire.EmpireNew.Objects.Terrain;
+import com.rmbcorp.empire.Objects.Terrain;
 
 /** This class represents field units, which are the mobile, fighting pieces
  * in the game, as opposed to cities, which are the other type of piece.

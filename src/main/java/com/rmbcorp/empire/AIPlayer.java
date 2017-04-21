@@ -1,15 +1,15 @@
 package com.rmbcorp.empire;
 
-import java.util.ArrayList;
+import com.rmbcorp.empire.AI.EmotionalStates;
+import com.rmbcorp.empire.AI.Surveyor;
+import com.rmbcorp.empire.API.Piece;
+import com.rmbcorp.empire.Objects.Controller;
+import com.rmbcorp.empire.Objects.GenericPlayer;
+import com.rmbcorp.empire.Objects.GenericPlayerID;
+import com.rmbcorp.empire.Objects.PieceManager;
+import com.rmbcorp.empire.util.SaveData;
 
-import com.Empire.EmpireNew.AI.EmotionalStates;
-import com.Empire.EmpireNew.AI.Surveyor;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.Objects.Controller;
-import com.Empire.EmpireNew.Objects.GenericPlayer;
-import com.Empire.EmpireNew.Objects.GenericPlayerID;
-import com.Empire.EmpireNew.Objects.PieceManager;
-import com.Empire.EmpireNew.util.SaveData;
+import java.util.ArrayList;
 
 public final class AIPlayer extends GenericPlayer { // maybe make un-final and allow folks to extend
 

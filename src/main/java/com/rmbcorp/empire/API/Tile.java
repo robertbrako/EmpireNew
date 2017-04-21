@@ -1,8 +1,8 @@
 package com.rmbcorp.empire.API;
-import java.util.List;
+import com.rmbcorp.empire.Objects.Terrain;
+import com.rmbcorp.empire.util.SaveData;
 
-import com.Empire.EmpireNew.Objects.Terrain;
-import com.Empire.EmpireNew.util.SaveData;
+import java.util.List;
 
 public interface Tile {
 

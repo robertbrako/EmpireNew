@@ -1,8 +1,8 @@
 package com.rmbcorp.empire.AI;
 
-import java.util.ArrayList;
+import com.rmbcorp.empire.RuleManager;
 
-import com.Empire.EmpireNew.RuleManager;
+import java.util.ArrayList;
 
 public class Surveyor {
 	private int id;

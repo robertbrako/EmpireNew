@@ -1,6 +1,6 @@
 package com.rmbcorp.empire.API;
 
-import com.Empire.EmpireNew.Objects.GamePiece;
+import com.rmbcorp.empire.Objects.GamePiece;
 
 abstract public class BasicPlayer implements Player {
 

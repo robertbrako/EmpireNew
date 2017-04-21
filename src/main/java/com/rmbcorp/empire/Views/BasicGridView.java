@@ -1,8 +1,8 @@
 package com.rmbcorp.empire.Views;
 
-import com.Empire.EmpireNew.RuleManager;
-import com.Empire.EmpireNew.util.ClientUtils;
-import com.Empire.EmpireNew.util.Numbers;
+import com.rmbcorp.empire.RuleManager;
+import com.rmbcorp.empire.util.ClientUtils;
+import com.rmbcorp.empire.util.Numbers;
 
 import android.content.Context;
 import android.graphics.Bitmap;

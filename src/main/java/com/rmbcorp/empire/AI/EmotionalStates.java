@@ -1,8 +1,8 @@
 package com.rmbcorp.empire.AI;
 
-import java.util.ArrayList;
+import com.rmbcorp.empire.Objects.GenericPlayerID;
 
-import com.Empire.EmpireNew.Objects.GenericPlayerID;
+import java.util.ArrayList;
 
 public final class EmotionalStates {
 	/* These variables should generally range from [0.0 to 1.0) */

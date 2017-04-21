@@ -1,12 +1,12 @@
 package com.rmbcorp.empire.Objects;
 
-import java.util.List;
+import com.rmbcorp.empire.AIPlayer;
+import com.rmbcorp.empire.API.Piece;
+import com.rmbcorp.empire.API.Player;
+import com.rmbcorp.empire.util.ClientUtils;
+import com.rmbcorp.empire.util.SaveData;
 
-import com.Empire.EmpireNew.AIPlayer;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.util.ClientUtils;
-import com.Empire.EmpireNew.util.SaveData;
+import java.util.List;
 
 public abstract class GenericPlayer implements Player {
 	protected GenericPlayerID id;
@@ -41,7 +41,7 @@ public abstract class GenericPlayer implements Player {
 	 * 33ARMY1
 	 * 16BOMBER2
 	 * 
-	 * @see com.Empire.EmpireNew.API.Player#save()
+	 * @see com.rmbcorp.empire.API.Player#save()
 	 */
 	public SaveData save() {
 		if (pieces.size() <= 0)

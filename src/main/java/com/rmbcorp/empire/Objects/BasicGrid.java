@@ -1,10 +1,10 @@
 package com.rmbcorp.empire.Objects;
 
-import java.util.ArrayList;
+import com.rmbcorp.empire.API.Grid;
+import com.rmbcorp.empire.API.Tile;
+import com.rmbcorp.empire.util.TerrainMatrix;
 
-import com.Empire.EmpireNew.API.Grid;
-import com.Empire.EmpireNew.API.Tile;
-import com.Empire.EmpireNew.util.TerrainMatrix;
+import java.util.ArrayList;
 
 public class BasicGrid implements Grid {
 	

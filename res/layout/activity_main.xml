@@ -5,13 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.Empire.EmpireNew.Views.BasicGridView
+    <com.rmbcorp.empire.Views.BasicGridView
         android:id="@+id/basicGridView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.75"
         empire_viewpoint="basic1p" />
-	<com.Empire.EmpireNew.Views.MainBarView
+
+	<com.rmbcorp.empire.Views.MainBarView
         android:id="@+id/mainBarView1"
         android:layout_width="match_parent"
         android:layout_height="76dp"

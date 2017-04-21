@@ -1,6 +1,6 @@
 package com.rmbcorp.empire.API;
 
-import com.Empire.EmpireNew.util.SaveData;
+import com.rmbcorp.empire.util.SaveData;
 
 public interface Player {
 	

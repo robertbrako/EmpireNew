@@ -1,16 +1,11 @@
 package com.rmbcorp.empire.Objects;
 
-import java.util.List;
-import java.util.ArrayList;
+import com.rmbcorp.empire.API.*;
+import com.rmbcorp.empire.API.GameExceptions.InvalidMoveException;
+import com.rmbcorp.empire.util.SaveData;
 
-import com.Empire.EmpireNew.API.BackendTile;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.API.Tile;
-import com.Empire.EmpireNew.API.TileID;
-import com.Empire.EmpireNew.API.Unit;
-import com.Empire.EmpireNew.API.GameExceptions.InvalidMoveException;
-import com.Empire.EmpireNew.util.SaveData;
+import java.util.ArrayList;
+import java.util.List;
 
 public class GameTile implements BackendTile {
 

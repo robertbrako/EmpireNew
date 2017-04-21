@@ -1,7 +1,7 @@
 package com.rmbcorp.empire.Objects;
 
-import com.Empire.EmpireNew.API.ID;
-import com.Empire.EmpireNew.API.PlayerID;
+import com.rmbcorp.empire.API.ID;
+import com.rmbcorp.empire.API.PlayerID;
 
 public final class GenericPlayerID implements PlayerID {
 	static Integer nextID = 0;

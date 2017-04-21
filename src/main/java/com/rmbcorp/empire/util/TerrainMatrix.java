@@ -1,10 +1,10 @@
 package com.rmbcorp.empire.util;
 
+import com.rmbcorp.empire.MainActivity;
+import com.rmbcorp.empire.Objects.Terrain;
+
 import java.util.Arrays;
 import java.util.Random;
-
-import com.Empire.EmpireNew.MainActivity;
-import com.Empire.EmpireNew.Objects.Terrain;
 
 /**
  * Another nifty creation that:

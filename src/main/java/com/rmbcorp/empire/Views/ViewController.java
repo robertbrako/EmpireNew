@@ -1,13 +1,13 @@
 package com.rmbcorp.empire.Views;
 
-import com.Empire.EmpireNew.GUIPlayer;
-import com.Empire.EmpireNew.OrderQueue;
-import com.Empire.EmpireNew.RuleManager;
-import com.Empire.EmpireNew.Objects.Controller;
-import com.Empire.EmpireNew.Objects.GameUnit;
-import com.Empire.EmpireNew.util.ClientUtils;
-import com.Empire.EmpireNew.util.ClientUtils.Flag;
-import com.Empire.EmpireNew.util.Numbers;
+import com.rmbcorp.empire.GUIPlayer;
+import com.rmbcorp.empire.OrderQueue;
+import com.rmbcorp.empire.RuleManager;
+import com.rmbcorp.empire.Objects.Controller;
+import com.rmbcorp.empire.Objects.GameUnit;
+import com.rmbcorp.empire.util.ClientUtils;
+import com.rmbcorp.empire.util.ClientUtils.Flag;
+import com.rmbcorp.empire.util.Numbers;
 
 /** After considerable pondering and research, ViewController's duties have shrunk to the following:<br>
  * 1. Responding to (client) navigation events and data-request events<br>

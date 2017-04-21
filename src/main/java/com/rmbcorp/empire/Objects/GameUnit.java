@@ -5,11 +5,11 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.HashMap;
 
-import com.Empire.EmpireNew.API.BackendTile;
-import com.Empire.EmpireNew.API.GameExceptions;
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.API.Unit;
-import com.Empire.EmpireNew.API.GameExceptions.InvalidMoveException;
+import com.rmbcorp.empire.API.BackendTile;
+import com.rmbcorp.empire.API.GameExceptions;
+import com.rmbcorp.empire.API.Player;
+import com.rmbcorp.empire.API.Unit;
+import com.rmbcorp.empire.API.GameExceptions.InvalidMoveException;
 
 /**GameUnit represents the majority of in-game pieces and provides type data using the aptly-named TypeData inner class.
  * It contains a rudimentary algorithm for checking tiles reachable by a moveTo command via recursion.

@@ -17,7 +17,7 @@ public final class HibernateSaver extends Saver {
 		saveData = new ArrayList<>();
 	}
 	
-	/** @see com.Empire.EmpireNew.util.Saver#add() for requisite add method **/
+	/** @see com.rmbcorp.empire.util.Saver#add(SaveData sd) for requisite add method **/
 	
 	@Override
 	public boolean out() {

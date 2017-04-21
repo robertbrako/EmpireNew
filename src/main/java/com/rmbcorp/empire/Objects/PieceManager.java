@@ -1,9 +1,7 @@
 package com.rmbcorp.empire.Objects;
 
-//import com.Empire.EmpireNew.API.GameExceptions;
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.API.GameExceptions.InvalidMoveException;
-
+import com.rmbcorp.empire.API.GameExceptions.InvalidMoveException;
+import com.rmbcorp.empire.API.Player;
 
 public class PieceManager { // local; consider this class a helper of ViewController; should this class be an object?
 

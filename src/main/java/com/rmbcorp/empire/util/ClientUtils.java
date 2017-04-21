@@ -1,6 +1,6 @@
 package com.rmbcorp.empire.util;
 
-import com.Empire.EmpireNew.RuleManager;
+import com.rmbcorp.empire.RuleManager;
 /** Minor helper.  Currently converts byte code for unit to string name of unit **/
 public class ClientUtils {
 

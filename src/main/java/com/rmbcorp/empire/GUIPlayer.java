@@ -3,11 +3,12 @@
  */
 package com.rmbcorp.empire;
 
+import com.rmbcorp.empire.API.Piece;
+import com.rmbcorp.empire.Objects.GenericPlayer;
+import com.rmbcorp.empire.Objects.GenericPlayerID;
+import com.rmbcorp.empire.Views.MainBarView;
+
 import java.util.ArrayList;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.Objects.GenericPlayer;
-import com.Empire.EmpireNew.Objects.GenericPlayerID;
-import com.Empire.EmpireNew.Views.MainBarView;
 
 /**Client version has two implementations of GenericPlayer: this one represents player himself/herself.
  * Other one is AIPlayer, though I think I could make it a stand-in for remote players.
@@ -28,7 +29,7 @@ public final class GUIPlayer extends GenericPlayer {
 	}
 	
 	/** Send message to this player's GUI
-	 * @see com.Empire.EmpireNew.API.Player#sendMsg(java.lang.String)
+	 * @see com.rmbcorp.empire.API.Player#sendMsg(java.lang.String)
 	 */
 	@Override
 	public void sendMsg(String msg) {
@@ -37,7 +38,7 @@ public final class GUIPlayer extends GenericPlayer {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.Empire.EmpireNew.API.Player#conductTurn()
+	 * @see com.rmbcorp.empire.API.Player#conductTurn()
 	 */
 	@Override
 	public void conductTurn() {

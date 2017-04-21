@@ -8,16 +8,15 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
-
-import com.Empire.EmpireNew.Objects.BasicGrid;
-import com.Empire.EmpireNew.Objects.Controller;
-import com.Empire.EmpireNew.Objects.GameTile;
-import com.Empire.EmpireNew.Objects.GenericPlayer;
-import com.Empire.EmpireNew.Objects.PieceManager;
-import com.Empire.EmpireNew.Views.BasicGridView;
-import com.Empire.EmpireNew.Views.MainBarView;
-import com.Empire.EmpireNew.Views.ViewController;
-import com.Empire.EmpireNew.Views.ViewListener;
+import com.rmbcorp.empire.Objects.BasicGrid;
+import com.rmbcorp.empire.Objects.Controller;
+import com.rmbcorp.empire.Objects.GameTile;
+import com.rmbcorp.empire.Objects.GenericPlayer;
+import com.rmbcorp.empire.Objects.PieceManager;
+import com.rmbcorp.empire.Views.BasicGridView;
+import com.rmbcorp.empire.Views.MainBarView;
+import com.rmbcorp.empire.Views.ViewController;
+import com.rmbcorp.empire.Views.ViewListener;
 
 public class MainActivity extends Activity {
 

@@ -1,9 +1,9 @@
 package com.rmbcorp.empire.Objects;
 
-import java.util.ArrayList;
+import com.rmbcorp.empire.API.Player;
+import com.rmbcorp.empire.API.PlayerID;
 
-import com.Empire.EmpireNew.API.Player;
-import com.Empire.EmpireNew.API.PlayerID;
+import java.util.ArrayList;
 
 public class MessageService {
 	Player[] players;

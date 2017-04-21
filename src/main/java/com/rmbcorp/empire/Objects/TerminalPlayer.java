@@ -1,17 +1,13 @@
 package com.rmbcorp.empire.Objects;
 
+import com.rmbcorp.empire.API.*;
+import com.rmbcorp.empire.util.SaveData;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.Empire.EmpireNew.API.BasicPlayer;
-import com.Empire.EmpireNew.API.BasicPlayerID;
-import com.Empire.EmpireNew.API.Piece;
-import com.Empire.EmpireNew.API.Tile;
-import com.Empire.EmpireNew.API.Unit;
-import com.Empire.EmpireNew.util.SaveData;
 
 public class TerminalPlayer extends BasicPlayer {
 	
