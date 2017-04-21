@@ -18,6 +18,8 @@ import com.rmbcorp.empire.Views.MainBarView;
 import com.rmbcorp.empire.Views.ViewController;
 import com.rmbcorp.empire.Views.ViewListener;
 
+import static com.rmbcorp.empire.DataBridge.StringKey.PLAYER_COUNT;
+
 public class MainActivity extends Activity {
 
 	// first vars: Model, Views, and Controller
@@ -59,11 +61,9 @@ public class MainActivity extends Activity {
             LayoutInflater inflater = LayoutInflater.from(this);
 			View tempView = inflater.inflate(R.layout.activity_main, linearLayout);
 			//View temp = getLayoutInflater().inflate(R.layout.activity_main, linearLayout); // probably same thing; keep for reference
-			
-			// server-side init
+			DataBridge.put(PLAYER_COUNT, players.length);
 			basicGrid = new BasicGrid(rows, cols);
 			
-			//client-side init
 			createComponents(tempView);
 			
 			setupListeners();
@@ -130,10 +130,6 @@ public class MainActivity extends Activity {
 		vc.updateTileVisibility();
 		
 		bgv.invalidate();
-    }
-    /** temporary way for TerrainMatrix to get the number of players for the game. **/
-    public static int getPlayers() {
-    	return players.length;
     }
     
     private void setupListeners() {

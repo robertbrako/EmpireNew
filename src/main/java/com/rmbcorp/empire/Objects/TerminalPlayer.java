@@ -1,6 +1,10 @@
 package com.rmbcorp.empire.Objects;
 
-import com.rmbcorp.empire.API.*;
+import com.rmbcorp.empire.API.BasicPlayer;
+import com.rmbcorp.empire.API.BasicPlayerID;
+import com.rmbcorp.empire.API.Piece;
+import com.rmbcorp.empire.API.Tile;
+import com.rmbcorp.empire.API.Unit;
 import com.rmbcorp.empire.util.SaveData;
 
 import java.io.BufferedReader;

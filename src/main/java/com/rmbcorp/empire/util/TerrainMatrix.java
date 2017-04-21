@@ -1,10 +1,12 @@
 package com.rmbcorp.empire.util;
 
-import com.rmbcorp.empire.MainActivity;
+import com.rmbcorp.empire.DataBridge;
 import com.rmbcorp.empire.Objects.Terrain;
 
 import java.util.Arrays;
 import java.util.Random;
+
+import static com.rmbcorp.empire.DataBridge.StringKey.PLAYER_COUNT;
 
 /**
  * Another nifty creation that:
@@ -19,7 +21,7 @@ import java.util.Random;
  */
 public class TerrainMatrix {
 	
-	private static final int seedDist = 2; // constant that determines how close seed can be to boundary
+	static final int seedDist = 2; // constant that determines how close seed can be to boundary
 	private static int[] startLocation;
 	private static byte[] quadMap = { 1, 2, 3, 4};
 	/** At beginning of game, sets up tiles to be land or water/sea.
@@ -29,7 +31,7 @@ public class TerrainMatrix {
 	 * @return matrix of Terrain[rows][cols], where each entry is Terrain.LAND or Terrain.SEA
 	 */
 	public static Terrain[][] spawn(int rows, int cols) {
-		int playerCount = MainActivity.getPlayers(); //  maybe create a player manager to deal with this
+		int playerCount = DataBridge.get(PLAYER_COUNT); //  maybe create a player manager to deal with this
 		Terrain[][] result = new Terrain[rows][cols];
 		startLocation = new int[playerCount*2];
 		Random r = new Random();
@@ -56,7 +58,7 @@ public class TerrainMatrix {
 		int[] riverCoords = new int[cols*2]; // good setup for a horizontal river
 		//so far, implementation has a bias if rows are even (or odd, but I think even)
 		for (int i=0; i<cols*2; i+=2) {
-			riverCoords[i] = rows/2+(r.nextInt(3)-1);;
+			riverCoords[i] = rows/2+(r.nextInt(3)-1);
 			riverCoords[i+1] = i/2;
 			result[riverCoords[i]][riverCoords[i+1]] = Terrain.SEA;
 			if (riverCoords[i] != rows/2)
@@ -103,7 +105,7 @@ public class TerrainMatrix {
 		boolean success = false;
 		int fac = (1 - seedRow%2); // calculations may vary depending on the starting row
 		
-		while (success == false) { // fail-safe initialization process, possibly unnecessary
+		while (!success) { // fail-safe initialization process, possibly unnecessary
 			input[seedRow][seedCol] = Terrain.LAND;
 			input[seedRow+1][seedCol+1-fac] = Terrain.LAND; // direction 0
 			input[seedRow][seedCol+1] = Terrain.LAND; // direction 1
@@ -117,7 +119,7 @@ public class TerrainMatrix {
 	}
 	
 	private static Terrain[][] secondSeeding(Terrain[][] input, int seedRow, int seedCol, boolean upDown) {
-		int dir = 0;
+		int dir;
 		if (upDown) { // first look upwards (negative row direction)
 			if (seedRow-2 > 0)
 				dir = -1;
@@ -161,28 +163,5 @@ public class TerrainMatrix {
 			qCol = cols*.75f;
 		System.out.println("QuadRow = " + qRow + " QuadCol = " + qCol);
 		return new float[] { qRow, qCol };
-	}
-	/** Testing routines are starting to get a little more complex **/
-	@SuppressWarnings("unused")
-	private static void stressTest(Terrain[][] input) {
-		Random r = new Random();
-		//first assume the quad function works:
-		int x0 = 3, y0 = 3; // assuming grid of 16x16, let's just use first quadrant
-		float seedRow, seedCol;
-		System.out.println("Initial Condition: Row = " + x0 + ", Col = " + y0);
-		for (int i=0; i<100; i++) {
-			seedRow = x0+(r.nextFloat()-0.5f)*(x0-seedDist);
-			seedCol = y0+(r.nextFloat()-0.5f)*(y0-seedDist);
-			System.out.println("Try " + i + ": Row = " + seedRow + ", Col = " + seedCol);
-		}
-		System.out.println("Now for other quadrant: Row = 11, Col = 11");
-		x0=12;
-		y0=12;
-		for (int i=0; i<100; i++) {
-			seedRow = x0+(r.nextFloat()-0.5f)*(input.length/2-x0);
-			seedCol = y0+(r.nextFloat()-0.5f)*(input.length/2-y0);
-			System.out.println("Try " + i + ": Row = " + seedRow + ", Col = " + seedCol);
-		}
-		System.out.println("End of stress test");
 	}
 }

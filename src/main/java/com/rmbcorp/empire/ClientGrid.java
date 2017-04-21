@@ -1,6 +1,10 @@
 package com.rmbcorp.empire;
 
-import com.rmbcorp.empire.API.*;
+import com.rmbcorp.empire.API.Grid;
+import com.rmbcorp.empire.API.Piece;
+import com.rmbcorp.empire.API.Player;
+import com.rmbcorp.empire.API.Tile;
+import com.rmbcorp.empire.API.Unit;
 import com.rmbcorp.empire.Objects.BasicGrid;
 import com.rmbcorp.empire.Objects.GameTile;
 import com.rmbcorp.empire.Objects.Terrain;
